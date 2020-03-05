@@ -45,6 +45,8 @@ tinydict = {'name': 'john', 'code': 6734, 'dept': 'sales'}
 # operation
 
 a = 10
+
+
 # print(9//2)
 # print(9.0//2.0)
 # print(-11//3)
@@ -105,7 +107,6 @@ a = 10
 # print(capital['India'])
 
 
-
 # ticks = time.time()
 # print("Number of ticks since 12:00am, January 1, 1970:", ticks)
 #
@@ -117,17 +118,85 @@ a = 10
 # print(cal)
 # print(calendar.leapdays(2020, 2021))
 
-def showCalender( year, month ):
-    "this function shows a calendear for a given month and year"
-    calToShow = calendar.month(year, month)
-    print(calToShow)
-    return;
+# def showCalender( year, month ):
+#     "this function shows a calendear for a given month and year"
+#     calToShow = calendar.month(year, month)
+#     print(calToShow)
+#     return;
+#
+# def printinfo( name, age ):
+#    "This prints a passed info into this function"
+#    print("Name: ", name)
+#    print("Age ", age)
+#    return;
+#
+# showCalender(2020,6)
+# printinfo('manas','20')
 
-def printinfo( name, age ):
-   "This prints a passed info into this function"
-   print("Name: ", name)
-   print("Age ", age)
-   return;
+# # Call by reference
+# def changeme( mylist ):
+#    "This changes a passed list into this function"
+#    mylist = [ 1,2,3,4];
+#    print("Values inside the function: ", mylist)
+#    return
+#
+# # Now you can call changeme function
+# mylist = [10,20,30];
+# changeme( mylist );
+# print ("Values outside the function: ", mylist)
+#
+#
+# # Function definition is here
+# def printinfo(arg1, *vartuple):
+#     "This prints a variable passed arguments"
+#     print("Output is: ")
+#     print(arg1)
+#     for var in vartuple:
+#         print(var)
+#     return;
+#
+#
+# # Now you can call printinfo function
+# printinfo(10)
+# printinfo(70, 60, 50, 90, 99, 989)
 
-showCalender(2020,6)
-printinfo('manas','20')
+
+#lambda fucntion
+
+
+# Function definition is here
+# sum = lambda arg1, arg2: arg1 + arg2;
+#
+# # Now you can call sum as a function
+# print("Value of total : ", sum( 10, 20 ))
+# print("Value of total : ", sum( 20, 20 ))
+
+from typing import List, Any
+
+#
+# def all_the_same(elements: List[Any]) -> bool:
+#
+#     if List == []:
+#         return False
+#     for x in List:
+#         if x != List[0]:
+#             return False
+#     return True
+#
+#
+# if __name__ == '__main__':
+#     print("Example:")
+#     print(all_the_same([1, 1, 1]))
+#
+#     # These "asserts" are used for self-checking and not for an auto-testing
+#     assert all_the_same([1, 1, 1]) == True
+#     assert all_the_same([1, 2, 1]) == False
+#     assert all_the_same(['a', 'a', 'a']) == True
+#     assert all_the_same([]) == True
+#     assert all_the_same([1]) == True
+#     print("Coding complete? Click 'Check' to earn cool rewards!")
+
+mylist = [23, 45, 23, 12, 45, 67, 78]
+print(max(mylist))
+print(min(mylist))
+
