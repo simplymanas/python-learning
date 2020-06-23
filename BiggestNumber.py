@@ -16,6 +16,8 @@ def max_digit(number: int) -> int:
     return maxnumber
 
 
+
+
 #   return reduce(lambda x, y: x * int(y),(y for y in str(number) if int(y) != 0),1)
 
 if __name__ == '__main__':
