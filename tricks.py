@@ -27,7 +27,7 @@
 # # if any((x, y, z)):
 # #     print('passed')
 
-#trick 3
+# trick 3
 # # Print even number within a range of 20
 #
 # evens = [x for x in range(20) if x % 2 == 0]
@@ -47,14 +47,14 @@
 
 
 # trick 4
+
 # swapping variables
-#
-# a = 5
-# b = 6
-#
-# a,b = b,a
-#
-# print(a,b)
+a = 5
+b = 6
+
+a, b = b, a
+
+print(a, b)
 
 
 # how to sort a python dictionary

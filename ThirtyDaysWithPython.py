@@ -18,13 +18,20 @@
 # print(x)
 
 ## adding big number
+
+
+# Add big number with a comma(,) separated output
+
+# you can use _ to separate the position, readability is better as well
 #
-# num1 = 1_00_000_000
-# num2 = 1_00_000_000_000
+# a_number = 1_00_000_000
 #
-# total = num1 + num2
+# one_more_number = 1_00_000_000_000  # readability is nice
 #
-# print(f'{total: ,}')
+# total_of_both_the_number = a_number + one_more_number
+#
+# print(f'{total_of_both_the_number: ,}')  # prints  100,100,000,000
+
 
 ## managing resource
 # context manager
@@ -82,6 +89,45 @@
 #
 # # print(getattr(person, first_key))
 # # print(person.last)
+
+
+## log user id and password
+# from getpass import getpass
+#
+# username = input('username: ')
+# password = getpass('password: ')
+#
+# print('Logging In ....')
+
+
+## get help , run in python console
+# import smtpd
+# help(smtpd)
+
+#
+# from datetime import datetime
+# dir(datetime)
+
+
+## function
+# def hello_fun(greeting, name='you'):
+# 	return '{}, {} Function.'.format(greeting, name)
+#
+#
+# print(hello_fun('hello', 'manas'))
+
+
+# DRY : Don't Repeat yourself
+#
+# def student_info(*args, **kwargs):
+# 	print(args)
+# 	print(kwargs)
+#
+# courses = ['Math', 'Arts']
+# info = {'name':'John', 'age':'22'}
+# # student_info('math', 'arts', name='John', age=22)
+# student_info(*courses, **info)
+# Union
 
 
 
