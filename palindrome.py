@@ -8,3 +8,5 @@ if input_string[::-1].lower() == input_string.lower():
 	print ("Oh My God!!! that's a palindrome 👏")
 else:
 	print ("Try again ")
+
+
