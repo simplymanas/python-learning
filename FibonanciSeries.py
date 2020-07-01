@@ -17,3 +17,5 @@ def fibonacci(n):
 
 for num in fibonacci(100):
 	print (num)
+
+

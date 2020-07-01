@@ -46,7 +46,6 @@ tinydict = {'name': 'john', 'code': 6734, 'dept': 'sales'}
 
 a = 10
 
-
 # print(9//2)
 # print(9.0//2.0)
 # print(-11//3)
@@ -161,7 +160,7 @@ a = 10
 # printinfo(70, 60, 50, 90, 99, 989)
 
 
-#lambda fucntion
+# lambda fucntion
 
 
 # Function definition is here
@@ -196,7 +195,18 @@ from typing import List, Any
 #     assert all_the_same([1]) == True
 #     print("Coding complete? Click 'Check' to earn cool rewards!")
 
-mylist = [23, 45, 23, 12, 45, 67, 78]
-print(max(mylist))
-print(min(mylist))
+# mylist = [23, 45, 23, 12, 45, 67, 78]
+# print(max(mylist))
+# print(min(mylist))
 
+
+# Quiz : There's no way to "reset" a generator. Do you "kya tod hai"
+
+
+# 2nd July 2020
+# enumeration
+class ActorRank:
+	Idiot, SuperStar, Star, Hero, Cartoon = range(5)
+
+
+print (ActorRank.SuperStar)
