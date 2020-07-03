@@ -205,8 +205,64 @@ from typing import List, Any
 
 # 2nd July 2020
 # enumeration
-class ActorRank:
-	Idiot, SuperStar, Star, Hero, Cartoon = range(5)
 
 
-print (ActorRank.SuperStar)
+'''
+Created on 02-Jul-2020
+
+@author: manas
+
+How to create enumeration
+'''
+#
+# # may be a quick way
+# class ActorRank:
+# 	Zero, SuperStar, Star, Hero, Cartoon = range(5)
+#
+#
+# print(ActorRank.SuperStar)
+#
+#
+# # the other way is to use what comes with python , Enum class
+# from enum import Enum
+#
+#
+# class Color(Enum):
+# 	RED = 1
+# 	GREEN = 2
+# 	BLUE = 3
+#
+#
+# # Enumeration members have human readable string representations:
+# print('1 here')
+# print (Color.RED)  # Color.RED
+#
+# # while their repr has more information:
+# print (repr(Color.RED))  # <Color.RED: 1>
+#
+# # The type of an enumeration member is the enumeration it belongs to:
+# print (type (Color.RED)) # <enum 'Color'>
+#
+# # verify isinstance
+# print (isinstance (Color.GREEN, Color))  # True
+#
+# # Enum members also have a property that contains just their item name:
+# print (Color.RED.name)  # RED
+#
+# # Also Enumerations support iteration, try to explore more
+# # https://docs.python.org/3/library/enum.html#enum.Enum
+
+#
+# class Color:
+#   RED = 1
+#   GREEN = 2
+#   BLUE = 3
+#
+# print (Color.RED)
+
+# remove duplicate elements from a list
+# Is this a better way to do it ot do you have a better suggestion?
+
+mylist = [23, 45, 23, 12, 45, 23, 67, 78]
+
+print(list(set(mylist)))  # [67, 12, 45, 78, 23]
