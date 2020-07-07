@@ -334,3 +334,11 @@
 #
 # # try executing this
 # howdoi howdoi
+#
+# elements = [1,2,3,0,4,5]
+# for element in elements:
+# 	if element==0:
+# 		print ("I have the power now")
+# 		break
+# else:
+# 	print("breakup ho gaya")
