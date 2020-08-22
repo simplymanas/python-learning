@@ -15,6 +15,8 @@ def check_number(element, elements):
 
 numbers = [1, 2, 3, 0, 4, 5]
 
+print(55 in numbers)
+
 # this way
 print('\nUsing function and finding from list', numbers)
 t = TicToc()

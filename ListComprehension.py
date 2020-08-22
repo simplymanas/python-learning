@@ -7,7 +7,7 @@
 #   or to create a subsequence of those elements that satisfy a certain condition.
 # source: https://docs.python.org/3/tutorial/datastructures.html
 
-
+# list comprehension
 vegetables = [
 	{'name': 'Potato', 'price': 40},
 	{'name': 'Tomato', 'price': 20},

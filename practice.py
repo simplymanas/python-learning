@@ -342,3 +342,135 @@
 # 		break
 # else:
 # 	print("breakup ho gaya")
+
+# from collections import defaultdict
+#
+# def tree(): return defaultdict(tree)
+#
+# tree()
+
+# import collections
+# from typing import Counter, List, Set, Tuple
+#
+#
+# def subanagrams(letters: Counter[str], words: Set[str], min_len=4) -> List[Tuple[str, Counter[str]]]:
+# 	anagrams = []
+# 	for word in words:
+# 		if len(word) < min_len: continue
+#
+# 		rest = letters.copy()
+# 		rest.subtract(collections.Counter(word))
+# 		if any(n < 0 for n in rest.values()): continue  # word isn't a subset of letters
+#
+# 		anagrams.append((word, rest))
+# 	return anagrams
+#
+#
+# def main():
+# 	with open('/usr/share/dict/words') as f:
+# 		words = {line.strip().upper() for line in f}
+#
+# 	anagrams = subanagrams(collections.Counter(''), words)
+#
+# 	for word, rest in sorted(anagrams):
+# 		print(word, ''.join(sorted(rest.elements())))
+#
+#
+# if __name__ == '__main__':
+# 	main()
+#
+
+
+# from __future__ import braces
+# import __hello__
+
+# unique_in_order('AAAABBBCCDAABBB') == ['A', 'B', 'C', 'D', 'A', 'B']
+# unique_in_order('ABBCcAD')         == ['A', 'B', 'C', 'c', 'A', 'D']
+# # unique_in_order([1,2,2,3,3])       == [1,2,3]
+# used = []
+# output = 'AAAABBBCCDAABBB'
+#
+#
+# unique = [x for x in output if x not in used and (used.add(x) or True)]
+#
+# print(unique)
+
+# import urllib
+# import re
+#
+# print ("we will try to open this url, in order to get IP Address")
+#
+# url = "http://checkip.dyndns.org"
+#
+# print (url)
+#
+# request = urllib.urlopen(url).read()
+#
+# theIP = re.findall(r"d{1,3}.d{1,3}.d{1,3}.d{1,3}", request)
+#
+# print ("your IP Address is: ",  theIP)
+
+# A dynamic web app
+# How my REST API will look like
+#
+# # from flask import Flask
+# from fastapi import FastAPI
+# # app = Flask(__name__)
+# app = FastAPI()
+#
+# @app.route("/")
+# def techster():
+#  return "Welcome to Techster 4.0"
+#
+# @app.route('/<name>')
+# def hello_name(name):
+#     return "Hello {}!, welcome to Techster 4.0".format(name)
+#
+# @app.route("/python")
+# def pytechster():
+#  return "learning is fun when you share. A code a day "
+# #
+# # if __name__ == "__main__":
+# #  app.run()
+#
+# # output
+# # * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+# # 127.0.0.1 - - [12/Jul/2020 11:18:39] "GET / HTTP/1.1" 200 -
+# # 127.0.0.1 - - [12/Jul/2020 11:18:44] "GET /python HTTP/1.1" 200 -
+# # 127.0.0.1 - - [12/Jul/2020 11:18:49] "GET /manas%20dash HTTP/1.1" 200 -
+# #
+#
+# from typing import Optional
+#
+# from fastapi import FastAPI
+#
+# app = FastAPI()
+#
+#
+# @app.get("/")
+# def read_root():
+#     return {"Hello": "World"}
+#
+#
+# @app.get("/items/{item_id}")
+# def read_item(item_id: int, q: Optional[str] = None):
+#     return {"item_id": item_id, "q": q}
+#
+#
+
+from PyLyrics import *
+
+try:
+    # singer = input("Enter singer: ") # Kumar Sanu
+    # song = input("Enter track: ") # Ek Ladki Ko Dekha
+
+    # print(PyLyrics.getLyrics(singer, song.capitalize()))
+    # print(PyLyrics.getLyrics('Taylor Swift', 'Blank Space'))
+
+    albums = PyLyrics.getAlbums(singer='sanu')
+    for a in albums:
+        print(a)  # Each album printed is a Album Object
+
+
+except Exception as e:
+    print(e)

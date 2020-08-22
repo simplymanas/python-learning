@@ -9,13 +9,13 @@
 
 
 def fibonacci(n):
-	a = b = 1
+	first = second = 1
 	for i in range(n):
-		yield a
-		a, b = b, a + b
+		yield first
+		first, second = second, first + second
 
 
 for num in fibonacci(100):
-	print (num)
+	print(num)
 
 
