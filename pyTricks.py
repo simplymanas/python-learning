@@ -190,12 +190,73 @@
 # Manas Dash
 # 14th August 2020
 
-print("\U0001f600")
-print("\u2665")
-print("\N{Black heart suit}")
-print("\N{grinning face}")
-print("\N{slightly smiling face}")
-print("\N{Beating heart}")
-print("\N{thinking face}")
-print("\N{zipper-mouth face}")
-print("\N{face with head-bandage}")
+# print("\U0001f600")
+# print("\u2665")
+# print("\N{Black heart suit}")
+# print("\N{grinning face}")
+# print("\N{slightly smiling face}")
+# print("\N{Beating heart}")
+# print("\N{thinking face}")
+# print("\N{zipper-mouth face}")
+# print("\N{face with head-bandage}")
+
+# List1 = ['Python', 'Py', 'Pyth', 'Python3']
+# List2 = List1*2
+# List3 = List1[:]
+# List2[0] = 'Hello'
+# List3[1] = 'World'
+# sum = 0
+# for ls in (List1, List2, List3):
+# 	if ls[0] == 'Hello':
+# 		sum += 1
+# 	if ls[1] == 'World':
+# 		sum += 2
+# print(sum, List2)
+# List1 = ['Python', 'Py', 'Pyth', 'Python3']
+# print(List1[-1][2])
+#
+# x = range(10)
+# y = sum(x)
+# print(y)
+# print(x)
+
+
+# Date: 18 nov 2020
+# Online python study
+
+bookshelf = []  # a collection initialized
+# list is a collection of any object (inside python)
+
+bookshelf = [
+	"The Effective Engineer",
+	"The 4-hour Workweek",
+	"Zero to One",
+	"Lean Startup",
+	"Hooked"
+]
+
+bookshelf.append("The Effective Engineer - part2")
+bookshelf.append("part3")
+bookshelf.append("part4")
+bookshelf.append(15)
+bookshelf.append(15.75)
+bookshelf.append(True)
+bookshelf.append(False)
+
+# print(bookshelf)
+# bookshelf: list object, collection
+# item: ? string
+
+# assign an  object into 'item' variable from 'bookshelf' list
+ctr = 0
+for book in bookshelf:  # iteration of items in bookshelf
+	ctr = ctr + 1
+	print(f"The book number {ctr} is {book}")
+
+
+# %d %s
+#
+# bookshelf.append("The Effective Engineer")
+# bookshelf.append("The 4 Hour Work Week")
+# print(bookshelf[0]) # The Effective Engineer
+# print(bookshelf[1]) # The 4 Hour Work Week
