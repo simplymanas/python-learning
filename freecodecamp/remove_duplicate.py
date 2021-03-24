@@ -2,7 +2,7 @@
 # input: "aabbccd"
 # output : "abcd"
 
-
+# using list
 def remove_duplicate(input_string):
 	if input_string is None:
 		return f"its an empty string"
@@ -14,6 +14,20 @@ def remove_duplicate(input_string):
 	return visited
 
 
-my_string = "aabbccd"
+# using set
+
+def remove_duplicate_set(input_string):
+	visited = set()
+	output_string = ''
+
+	for char in input_string:
+		if char not in visited:
+			visited.add(char)
+			output_string += char
+	return output_string
+
+
+my_string = "manas"
 
 print(remove_duplicate(my_string))
+print(remove_duplicate_set(my_string))
