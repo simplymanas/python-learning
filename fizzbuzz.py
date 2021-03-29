@@ -46,7 +46,7 @@ def checkio(number: int) -> str:
 # Convert a number in the string with str(n)
 
 # These "asserts" using only for self-checking and not necessary for auto-testing
-if __name__ == '__main__':
+if __name__ == '__main__': # pragma: no cover
     print('Example:')
     print(checkio(7))
 
@@ -55,3 +55,5 @@ if __name__ == '__main__':
     assert checkio(5) == "Buzz", "5 is divisible by 5"
     assert checkio(7) == "7", "7 is not divisible by 3 or 5"
     print("Coding complete? Click 'Check' to review your tests and earn cool rewards!")
+
+
